@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestModuleA", "tests\TestMo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestModuleB", "tests\TestModuleB\TestModuleB.csproj", "{A9C62FEF-8F9D-4D3F-B835-7E91412BECCE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestModuleC", "TestModuleC\TestModuleC.csproj", "{3E9E2540-D52A-4DA1-9748-B76EB6FE1F6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestModuleC", "tests\TestModuleC\TestModuleC.csproj", "{3E9E2540-D52A-4DA1-9748-B76EB6FE1F6C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCResolvingTests", "tests\IoCResolvingTests\IoCResolvingTests.csproj", "{B4EA725A-9F05-4DDB-8800-1FFEF12211BA}"
 EndProject
