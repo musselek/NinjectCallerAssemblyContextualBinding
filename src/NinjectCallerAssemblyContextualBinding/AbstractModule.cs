@@ -6,10 +6,8 @@ namespace NinjectCallerAssemblyContextualBinding
 {
     public abstract class AbstractModule : NinjectModule
     {
-        private readonly Lazy<AbstractBinderBehavior> _binderBehavior;
-
-        public AbstractModule()
-            => _binderBehavior = new(Kernel.Get<AbstractBinderBehavior>());
+        private AbstractBinderBehavior BinderBehavior()
+            => Kernel.Get<AbstractBinderBehavior>();
 
         public abstract void Binder();
 
@@ -17,15 +15,15 @@ namespace NinjectCallerAssemblyContextualBinding
           => Binder();
 
         public new void Bind<T>() where T : class
-          => _binderBehavior.Value.Bind<T>(Kernel);
+          => BinderBehavior().Bind<T>(Kernel);
 
         public void Bind<T>(Scope scope) where T : class
-            => _binderBehavior.Value.Bind<T>(scope, Kernel);
+            => BinderBehavior().Bind<T>(scope, Kernel);
 
         public new void Bind(params Type[] services)
-            => _binderBehavior.Value.Bind(Kernel, services);
+            => BinderBehavior().Bind(Kernel, services);
 
         public new void Bind<T, K>() where K : class, T
-            => _binderBehavior.Value.Bind<T, K>(Kernel);
+            => BinderBehavior().Bind<T, K>(Kernel);
     }
 }

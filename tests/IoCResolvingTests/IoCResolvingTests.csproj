@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\NinjectCallerAssemblyContextualBinding\NinjectCallerAssemblyContextualBinding.csproj" />
     <ProjectReference Include="..\..\TestModuleC\TestModuleC.csproj" />
     <ProjectReference Include="..\TestCommonData\TestCommonData.csproj" />
     <ProjectReference Include="..\TestModuleA\TestModuleA.csproj" />
