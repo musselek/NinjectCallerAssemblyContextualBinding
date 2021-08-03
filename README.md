@@ -1,5 +1,5 @@
 # NinjectCallerAssemblyContextualBinding
-Ninject is death, right?
+Ninject is death, right?<br />
 It is a simple project, based od Ninject for creating a contextual binding when you work in plugin architecture and you have common or dedicated behavior for some actions
 It bases on the Convention Over Configuration strategy, so if something is defined in the plugin - use it, if not - use the common one
 
@@ -10,7 +10,7 @@ Let's imagine the project which has three plugins
 * PluginB
     * IBehavior -> PluginBBehavior 
 * PluginC
-and common part
+   * does not have any dedicated implementation
 * Common
     * IBehavior -> CommonBehavior
 
